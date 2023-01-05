@@ -1,0 +1,119 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 100vh;
+    background-color: black;
+}
+
+.header {
+    width: 100%;
+    text-align: center;
+    font-size: xx-large;
+    padding: 10px;
+    background: linear-gradient(to right, orange, yellow, green, cyan, blue, violet);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.container {
+    display: flex;
+    border: 1px solid rgb(54, 25, 25);
+    flex-direction: column;
+    row-gap: 10px;
+    padding: 10px;
+    max-width: 500px;
+    min-width: 300px;
+    border-radius: 20px 20px;
+
+    font-size: xx-large;
+
+}
+
+.display {
+    display: flex;
+    flex-direction: column;
+}
+
+.display-top,
+.display-bottom {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    min-height: 45px;
+    padding-right: 1em;
+}
+
+.display-top {
+    background-color: rgb(34, 32, 32);
+    background: linear-gradient(to bottom, rgb(34, 32, 32), rgb(34, 33, 33));
+    color: rgb(100, 96, 96);
+}
+
+.display-bottom {
+
+    background: linear-gradient(to top, rgb(14, 12, 12), rgb(34, 33, 33));
+
+    color: rgb(122, 120, 120)
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+
+}
+
+.button {
+    background-color: rgb(34, 32, 32);
+    height: 70px;
+    border-radius: 50%;
+    color: aliceblue
+}
+
+.bt-reset,
+.bt-equals,
+.bt-0 {
+    grid-column: span 2;
+    border-radius: 30px;
+}
+
+.bt-reset {
+    background-color: rgb(7, 8, 8);
+    border: 1px solid rgb(34, 32, 32);
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bt-add,
+.bt-sub,
+.bt-mul,
+.bt-div {
+    background-color: rgb(189, 19, 19);
+}
+
+.button-hover {
+    background-color: rgb(26, 23, 23);
+    transform: scale(1.1);
+    color: rgb(255, 255, 255);
+}
+
+.operator-hover {
+    background-color: rgb(216, 15, 15);
+    transform: scale(1.1);
+    color: rgb(255, 255, 255);
+}
+
+.reset-hover {
+    transform: scale(1.1);
+    color: rgb(255, 255, 255);
+    background-color: black;
+}
